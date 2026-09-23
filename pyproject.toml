@@ -1,0 +1,20 @@
+[project]
+name = "cicd-training"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.1,<2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<9",
+    "ruff>=0.6,<1.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88

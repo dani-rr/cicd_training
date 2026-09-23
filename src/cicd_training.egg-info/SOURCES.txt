@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/pipeline.py
+src/cicd_training.egg-info/PKG-INFO
+src/cicd_training.egg-info/SOURCES.txt
+src/cicd_training.egg-info/dependency_links.txt
+src/cicd_training.egg-info/requires.txt
+src/cicd_training.egg-info/top_level.txt
+tests/test_pipeline.py
