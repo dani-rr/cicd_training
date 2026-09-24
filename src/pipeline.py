@@ -23,7 +23,7 @@ def transform_orders(orders: list[dict]) -> list[dict]:
                 "customer_id": int(order["customer_id"]),
                 "quantity": quantity,
                 "unit_price": unit_price,
-                "total_amount": quantity * unit_price,
+                "total_amount": quantity + unit_price,
             }
         )
 
