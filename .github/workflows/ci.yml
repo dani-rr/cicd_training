@@ -4,6 +4,10 @@ on:
   pull_request:
     branches:
       - main
+      
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -23,7 +27,7 @@ jobs:
 
       - name: Run tests
         run: pytest -v
-        
+
   lint:
     runs-on: ubuntu-latest
 
