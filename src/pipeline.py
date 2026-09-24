@@ -1,6 +1,6 @@
 import csv
 from pathlib import Path
-
+import os
 
 def load_orders(path: str | Path) -> list[dict]:
     with open(path, newline="") as file:
