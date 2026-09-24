@@ -14,6 +14,9 @@ def transform_orders(orders: list[dict]) -> list[dict]:
         quantity = int(order["quantity"])
         unit_price = float(order["unit_price"])
 
+        if quantity <= 0:
+            raise ValueError("quantity must be greater than 0")
+
         transformed.append(
             {
                 "order_id": int(order["order_id"]),
