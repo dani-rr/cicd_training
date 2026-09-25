@@ -1,4 +1,5 @@
 import csv
+import os
 from pathlib import Path
 
 
@@ -31,6 +32,10 @@ def transform_orders(orders: list[dict]) -> list[dict]:
 
 
 def main() -> None:
+    app_env = os.getenv("APP_ENV", "local")
+
+    print(f"Running in environment: {app_env}")
+
     orders = load_orders("data/orders.csv")
     transformed_orders = transform_orders(orders)
 
